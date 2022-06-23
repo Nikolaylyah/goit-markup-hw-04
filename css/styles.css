@@ -78,7 +78,7 @@ ul, li {
 .navigation-link {
     padding: 32px 0
 }
-.navigation-link:hover {
+.navigation-link:hover, .navigation-link:focus {
     color: var(--button-hero);
 }
 .contacts {
@@ -106,7 +106,7 @@ ul, li {
 .contacts-list {
     list-style: none;
 }
-.contacts-links:hover {
+.contacts-links:hover, .contacts-links:focus {
     color: var(--button-hero);
     fill: var(--button-hero);
 }
@@ -308,13 +308,19 @@ ul, li {
 }
 .clients-title {
     list-style: none;
-    padding: 16px 32px;
+}
+.clients-link {
     border: 1px solid var(--icon-color);
     border-radius: 4px;
     fill: var(--icon-color);
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    align-items: center;
 }
-.clients-title:hover {
+.clients-link:hover, .clients-link:focus {
     fill: var(--button-hero);
     border-color: var(--button-hero);
 }
@@ -353,7 +359,7 @@ ul, li {
     font-style: normal;
     cursor: pointer;
 }
-.filters-btn:hover {
+.filters-btn:hover, .filters-btn:focus {
     background: var(--button-hero);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     color: var(--accent-color);
